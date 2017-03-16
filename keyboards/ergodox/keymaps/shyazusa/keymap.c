@@ -120,7 +120,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 ,------|-----|------|       |------+------+------.
  *                                 |      |     |      |       |      |      |      |
  *                                 | Shift| GUI |------|       |------|      |      |
- *                                 |      |     |      |       | BBack|      |      |
+ *                                 |      |     |      |       |  BS  |      |      |
  *                                 `-------------------'       `--------------------'
  */
 // MEDIA AND MOUSE
@@ -142,7 +142,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                               KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,       KC_TRNS,
         KC_TRNS, KC_TRNS,
         KC_TRNS,
-        KC_WBAK, KC_BTN1, KC_TRNS
+        KC_TRNS, KC_BTN1, KC_TRNS
 ),
 };
 
