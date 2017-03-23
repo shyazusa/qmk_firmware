@@ -133,7 +133,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TRNS,       KC_TRNS,      KC_TRNS,    KC_BTN1, KC_BTN2,
                                                                    KC_MPRV,    KC_MPLY,
                                                                                KC_TRNS,
-                                                  SFT_T(KC_SPC), GUI_T(KC_SPC), KC_ESC,
+                                                 SFT_T(KC_SPC), GUI_T(KC_SPC), KC_ESC,
         // right hand
         KC_TRNS,  KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,       KC_TRNS,
         KC_TRNS,  LGUI(KC_C), KC_BTN1, KC_WH_U, KC_BTN2,  LGUI(KC_V),    KC_TRNS,
