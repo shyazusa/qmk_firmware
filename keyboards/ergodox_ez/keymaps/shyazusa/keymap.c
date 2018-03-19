@@ -28,14 +28,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  L2  |           |   B  |------+------+------+------+------+--------|
  * | Ctrl+L |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  | Ctrl+R |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   | Alt  |   |  |AltShf|  Up  |Enter |                                       | Left | Down |  UP  |Right | Enter|
- *   `----------------------------------'                                       `----------------------------------'
+ *   | Alt  |   |  |AltShf|  Up  | Space|                                       | Left | Down |  UP  |Right | Enter  |
+ *   `----------------------------------'                                       `------------------------------------'
  *                                        ,--------------.       ,-------------.
  *                                        | Play  | Next |       | VolD | VolU |
  *                                ,-------|-------|------|       |------+------+------.
  *                                |       |       |Enter |       | Space|      |      |
- *                                | Space | Space |------|       |------| Tab  |Enter |
- *                                |-> Sft | -> GUI| ESC  |       |  BS  |-> GUI|-> L2 |
+ *                                | Shift |  GUI  |------|       |------| Tab  |Enter |
+ *                                |       |       | ESC  |       |  BS  |-> GUI|-> L2 |
  *                                `----------------------'       `--------------------'
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
@@ -46,15 +46,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_BSPC,       KC_Q,    KC_W,          KC_E,  KC_R,    KC_T,    KC_LBRC,
         KC_LCTL,       KC_A,    KC_S,          KC_D,  KC_F,    KC_G,
         LCTL(KC_LEFT), KC_Z,    KC_X,          KC_C,  KC_V,    KC_B,    TG(2),
-        KC_LALT,       KC_PIPE, LALT(KC_LSFT), KC_UP, KC_ENT,
+        KC_LALT,       KC_PIPE, LALT(KC_LSFT), KC_UP, KC_SPC,
                                                                KC_MPLY, KC_MNXT,
                                                                         KC_ENT,
-                                          SFT_T(KC_SPC), GUI_T(KC_SPC), KC_ESC,
+                                                      KC_LSFT, KC_LGUI, KC_ESC,
         // right hand
         KC_GRV,  KC_6,    KC_7,    KC_8,    KC_9,   KC_0,     KC_MINS,
         KC_RBRC, KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,     KC_BSLS,
                  KC_H,    KC_J,    KC_K,    KC_L,   KC_SCLN,  KC_QUOT,
-        KC_B,   KC_N,    KC_M,    KC_COMM, KC_DOT, KC_SLSH,  LCTL(KC_RIGHT),
+        KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT, KC_SLSH,  LCTL(KC_RIGHT),
                           KC_LEFT, KC_DOWN, KC_UP,  KC_RIGHT, KC_ENT,
         KC_VOLD, KC_VOLU,
         KC_SPC,
