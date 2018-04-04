@@ -105,7 +105,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 2: Media and mouse keys
  *
  * ,-----------------------------------------------------.           ,---------------------------------------------------.
- * |        |       |       |      |      |       | RESET|           |      |      |      |      |      |       |        |
+ * |        |       |       |      |      |       |      |           |RESET |      |      |      |      |       |        |
  * |--------+-------+-------+------+------+--------------|           |------+------+------+------+------+-------+--------|
  * |        | Gui+Q | Gui+W | MsUp |      | Gui+T |      |           |      | yank | Lclk | WhUp | Rclk | Past  |        |
  * |--------+-------+-------+------+------+-------|      |           |      |------+------+------+------+-------+--------|
@@ -126,7 +126,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // MEDIA AND MOUSE
 [MDIA] = KEYMAP(
         // left hand
-        KC_TRNS,       KC_TRNS,      KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS,    RESET,
+        KC_TRNS,       KC_TRNS,      KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,
         KC_TRNS,       LGUI(KC_Q),   LGUI(KC_W), KC_MS_U, KC_TRNS, LGUI(KC_T), KC_TRNS,
         KC_LCTL,       G_A(KC_LEFT), KC_MS_L,    KC_MS_D, KC_MS_R, KC_TRNS,
         KC_TRNS,       KC_TRNS,      KC_DELT,    KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,
@@ -135,7 +135,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                                KC_TRNS,
                                                  SFT_T(KC_SPC), GUI_T(KC_SPC), KC_ESC,
         // right hand
-        KC_TRNS,  KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,       KC_TRNS,
+        RESET,    KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,       KC_TRNS,
         KC_TRNS,  LGUI(KC_C), KC_BTN1, KC_WH_U, KC_BTN2,  LGUI(KC_V),    KC_TRNS,
                   KC_LEFT,    KC_DOWN, KC_UP,   KC_RIGHT, G_A(KC_RIGHT), KC_LCTL,
         KC_TRNS,  KC_TRNS,    KC_TRNS, KC_WH_D, KC_TRNS,  KC_TRNS,       KC_TRNS,
